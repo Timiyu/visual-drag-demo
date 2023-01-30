@@ -17,7 +17,7 @@
             关闭
         </el-button>
         <div class="ace-editor">
-            <div ref="ace" class="editor" />
+            <div ref="ace" class="editor"></div>
         </div>
         <el-button
             type="primary"
@@ -126,6 +126,7 @@ export default {
 .editor {
     margin: 10px 5px;
 }
+
 .btn {
     margin-top: 5px;
 }

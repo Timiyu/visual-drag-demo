@@ -164,6 +164,7 @@ export default {
             width: 288px;
             right: 0;
             top: 0;
+            /* stylelint-disable-next-line rule-empty-line-before */
             .el-select {
                 width: 100%;
             }
