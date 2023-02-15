@@ -53,8 +53,8 @@ const list = [
     {
         component: 'VInput',
         label: '输入框',
-        propValue: '双击编辑文字',
-        icon: 'wenben',
+        propValue: '输入框',
+        icon: 'shurukuang',
         request: {
             method: 'GET',
             data: [],
