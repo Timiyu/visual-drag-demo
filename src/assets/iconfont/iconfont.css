@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Materifal Icons"; /* Project id 2373406 */
+  font-family: "Materifal Icons";
   src: url('MaterialIcons-Regular.ttf') format('truetype'),
        url('MaterialIconsOutlined-Regular.otf') format('opentype'),
        url('MaterialIconsRound-Regular.otf') format('opentype'),
@@ -20,7 +20,7 @@
 }
 
 .icon-zuhe:before {
-  content: "\f84f";
+  content: "\eaeb";
 }
 
 .icon-biaoge:before {
@@ -52,11 +52,11 @@
 }
 
 .icon-ziyouquxian:before {
-  content: "\edfa";
+  content: "\f757";
 }
 
 .icon-zhixian:before {
-  content: "\ee43";
+  content: "\f108";
 }
 
 .icon-xiangyouxuanzhuan:before {
@@ -72,7 +72,7 @@
 }
 
 .icon-juxing:before {
-  content: "\e790";
+  content: "\eb54";
 }
 
 .icon-wenben:before {
