@@ -7,21 +7,21 @@
         @keyup="handleKeyup"
     >
         <!-- tabindex >= 0 使得双击时聚焦该元素 -->
-        <el-input
+        <input
             :placeholder="propValue"
             :contenteditable="canEdit" 
             :class="{ 'can-edit': canEdit }"
             tabindex="0"
             :style="{ verticalAlign: element.style.verticalAlign }"
-            @dblclick="setEdit"
             @paste="clearStyle"
             @mousedown="handleMousedown"
             @blur="handleBlur"
             @input="handleInput"
+            v-html="element.propValue"
         />
     </div>
     <div v-else class="v-input preview">
-        <el-input :model="v-input" :style="{ verticalAlign: element.style.verticalAlign }" />
+        <el-input v-model="propValue" :placeholder="propValue" :style="{ verticalAlign: element.style.verticalAlign }" />
     </div>
 </template>
 
@@ -68,7 +68,7 @@ export default {
         ]),
     },
     created() {
-        // 注意，修改时接口属性时不会发数据，在预览时才会发
+        // 注意，修改接口属性时不会发数据，在预览时才会发
         // 如果要在修改接口属性的同时发请求，需要 watch 一下 request 的属性
         if (this.request) {
             // 第二个参数是要修改数据的父对象，第三个参数是修改数据的 key，第四个数据修改数据的类型
